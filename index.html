@@ -6,15 +6,16 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/afui.custom.css">
     <link rel="stylesheet" type="text/css" href="css/icons.css">
+    <link rel="stylesheet" type="text/css" href="css/apps.css">
   </head>
   <body> 
     <div id="afui" class="ios7">
       <div id="header">
-        <a id="menubadge" onclick="af.ui.toggleSideMenu()" class="menuButton"></a>
+        <a id="menubadge" onclick="af.ui.toggleRightSideMenu()" class="menuButton"></a>
       </div>
       <div id="content">
         <!-- ホーム画面 -->
-        <div id="main" data-title="ホーム" class="panel" selected="true" data-nav="main-nav">
+        <div id="home" data-title="ホーム" class="panel">
           <h2>今回の内容</h2>
           <p>
             今回は Intel <a href="http://app-framework-software.intel.com">App Framework</a>を利用して、
@@ -28,7 +29,7 @@
         </div>
 
         <!-- アイコンリスト -->
-        <div id="icons" data-title="アイコンリスト" class="panel" data-nav="main-nav">
+        <div id="icons" data-title="アイコンリスト" class="panel">
           <ul class="list">
             <li class="icon add">add</li>
             <li class="icon basket">basket</li>
@@ -118,7 +119,7 @@
           </div>
         </div>
 
-        <div id="foxkeh-1" class="panel" data-footer="footer-foxkeh">
+        <div id="foxkeh-1" class="panel slideshow">
           <p>
             <img src="img/front.png">
           </p>
@@ -128,7 +129,7 @@
           </p>
         </div>
 
-        <div id="foxkeh-2" class="panel" data-footer="footer-foxkeh">
+        <div id="foxkeh-2" class="panel slideshow">
           <p>
             <img src="img/side.png">
           </p>
@@ -138,7 +139,7 @@
           </p>
         </div>
 
-        <div id="foxkeh-3" class="panel" data-footer="footer-foxkeh">
+        <div id="foxkeh-3" class="panel slideshow">
           <p>
             <img src="img/200705.png">
           </p>
@@ -148,7 +149,7 @@
           </p>
         </div>
 
-        <div id="foxkeh-4" class="panel" data-footer="footer-foxkeh">
+        <div id="foxkeh-4" class="panel slideshow">
           <p>
             <img src="img/200806.png">
           </p>
@@ -158,7 +159,7 @@
           </p>
         </div>
 
-        <div id="foxkeh-5" class="panel" data-footer="footer-foxkeh">
+        <div id="foxkeh-5" class="panel slideshow">
           <p>
             <img src="img/200902.png">
           </p>
@@ -168,7 +169,7 @@
           </p>
         </div>
 
-        <div id="foxkeh-6" class="panel" data-footer="footer-foxkeh">
+        <div id="foxkeh-6" class="panel slideshow">
           <p>
             <img src="img/201008.png">
           </p>
@@ -179,15 +180,30 @@
         </div>
       </div>
 
+      <!-- フッタ -->
+      <div id="navbar">
+        <a href="#home" class="icon home">Home</a>
+        <a href="#icons" class="icon folder">アイコン</a>
+        <a href="#buttons" class="icon folder">ボタン</a>
+        <a href="#foxkeh-1" class="icon picture">フォクすけ</a>
+      </div>
+
       <!-- サイドバー -->
-      <nav id="main-nav">
+      <aside id="main-nav">
         <ul class="list">
-          <li><a href="#main" class="icon home">Home</a></li>
-          <li><a href="#icons" class="icon folder">アイコン</a></li>
-          <li><a href="#buttons" class="icon folder">ボタン</a></li>
-          <li><a href="#foxkeh-1">フォクすけ</a></li>
+          <li class="divider">App Frameworkについて</li>
+          <li><a href="#home">ホーム</a></li>
+          <li><a href="#icons">アイコンリスト</a></li>
+          <li><a href="#buttons">ボタンリスト</a></li>
+          <li class="divider">スライドショー</li>
+          <li><a href="#foxkeh-1">1枚目</a></li>
+          <li><a href="#foxkeh-2">2枚目</a></li>
+          <li><a href="#foxkeh-3">3枚目</a></li>
+          <li><a href="#foxkeh-4">4枚目</a></li>
+          <li><a href="#foxkeh-5">5枚目</a></li>
+          <li><a href="#foxkeh-6">6枚目</a></li>
         </ul>
-      </nav>
+      </aside>
 
       <!-- スライドショーについてるフッタ -->
       <footer id="footer-foxkeh">
